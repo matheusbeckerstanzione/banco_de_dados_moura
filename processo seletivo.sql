@@ -4,9 +4,9 @@ CREATE TABLE tb_usuario(
 
 id_usuario INT IDENTITY(1,1) PRIMARY KEY,
  nome_completo NVARCHAR(255) NOT NULL,
- nome_usuario NVARCHAR(255) NOT  NULL,
- email NVARCHAR(255) NOT NULL,
- senha NVARCHAR(255) NOT NULL,
+ nome_usuario NVARCHAR(255) UNIQUE NOT  NULL,
+ email NVARCHAR(255) UNIQUE NOT NULL,
+ senha NVARCHAR(255) UNIQUE NOT NULL,
  foto_perfil_url NVARCHAR(255) NOT NULL,
 );
 
