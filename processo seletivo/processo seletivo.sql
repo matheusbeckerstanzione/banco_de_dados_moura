@@ -64,3 +64,6 @@ CREATE TABLE seguidor (
 );
 
 SELECT * FROM seguidor;
+
+
+
